@@ -25,16 +25,38 @@
 			color: navy;
 		}
 		
-   		@font-face {
+   		 @font-face {
    			font-family: 'SUIT-Medium';
    			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
    			font-weight: normal;
    			font-style: normal;
-		}
+		} 
 		
-		th,td {
+		th, td{
 			font-family: 'SUIT-Medium';
 			font-size: 15px;
+			color: black;
+		}
+		
+		@font-face {
+	    	font-family: 'OTWelcomeRA';
+	    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+	    	font-weight: normal;
+	    	font-style: normal;
+		}
+		
+		button{
+			font-family: 'OTWelcomeRA';
+			font-size: 20px;
+			color: black;
+		}
+		#btn button{
+			border: 2px solid black;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			background-color: silver;
 			color: black;
 		}
 	</style>
@@ -42,23 +64,26 @@
 </head>
 
 <body style="background-image: url('./image/abc.jpg'); background-size: auto;">
-
-
 	<p align="center">입사지원자 목록</p>
 	
 	<br><br>
 	
 	<div align="center">
-		<select>
-			<option value="이름">이름
+		<select style="width: 100px; height: 26px;">
 			<option value="성별">성별
+			<option value="남">남
+			<option value="여">여
+		</select>
+		<select style="width: 100px; height: 26px;">
+			<option value="---">---
+			<option value="이름">이름
 			<option value="생년월일">생년월일
 			<option value="주소">주소
 			<option value="연락처">연락처
 			<option value="이메일">이메일
 		</select>
-		<input type="text">
-		<input type="button" value="🔍 검색" onclick="here();">
+		<input type="text" style="width: 100px; height: 20px;">
+		<input type="button" value="🔍 검색" onclick="here();" style="height: 26px;">
 	</div>
 	
 	<br><br>
@@ -66,6 +91,7 @@
 	<table width="70%" align="center">
 		<thead>
 			<tr height="70px" style="background-color: gray;">
+				<th width="60px">선택</th>
 				<th width="100px">이름</th>
 	  			<th width="100px">성별</th>
 	  			<th width="100px">생년월일</th>
@@ -76,6 +102,7 @@
 	  	</thead>
 	  	<tbody style="background-color: silver;">
 	  		<tr height="40px">
+	  			<td><input type="checkbox"></td>
 	  			<td><a href="recruitView.html">김찬중</a></td>
 	  			<td>남</td>
 	  			<td>950531</td>
@@ -84,6 +111,7 @@
 	  			<td>kcj0531@naver.com</td>
 	  		</tr>
 	  		<tr height="40px">
+	  			<td><input type="checkbox"></td>
 	  			<td><a href="recruitView.html">이이이</a></td>
 	  			<td>여</td>
 	  			<td>960319</td>
@@ -92,14 +120,16 @@
 	  			<td>zkfoososf@naver.com</td>
 	  		</tr>
   			<tr height="40px">
-	  			<td><a href="recruitView.html">원빈</a></td>
+  				<td><input type="checkbox"></td>
+	  			<td><a href="recruitView.html">강동원</a></td>
 	  			<td>남</td>
-	  			<td>971221</td>
-	  			<td>서울시 용인구~</td>
+	  			<td>810118</td>
+	  			<td>부산시 서구~</td>
 	  			<td>010-2222-2222</td>
-	  			<td>llgdlda@gmail.com</td>
+	  			<td>kdwkdw1@gmail.com</td>
   			</tr>
   			<tr height="40px">
+  				<td><input type="checkbox"></td>
 	  			<td><a href="recruitView.html">최최최</a></td>
 	  			<td>여</td>
 	  			<td>941104</td>
@@ -108,6 +138,7 @@
 	  			<td>prpwpprw1@naver.com</td>
   			</tr>
   			<tr height="40px">
+  				<td><input type="checkbox"></td>
 	  			<td><a href="recruitView.html">박박박</a></td>
 	  			<td>남</td>
 	  			<td>950722</td>
@@ -116,14 +147,16 @@
 	  			<td>soofowfkf@gmail.com</td>
   			</tr>
   			<tr height="40px">
+  				<td><input type="checkbox"></td>
 	  			<td><a href="recruitView.html">권권권</a></td>
 	  			<td>여</td>
 	  			<td>980101</td>
-	  			<td>서울시 관악구~</td>
+	  			<td>용인시 기흥구~</td>
 	  			<td>010-5555-5555</td>
 	  			<td>kkkfkzsf@naver.com</td>
   			</tr>
   			<tr height="40px">
+  				<td><input type="checkbox"></td>
 	  			<td><a href="recruitView.html">정정정</a></td>
 	  			<td>남</td>
 	  			<td>970214</td>
@@ -134,14 +167,12 @@
 	  	</tbody>
   	</table>
   	
+  	<br><br>
+  	
+  	<div align="center" id="btn">
+		<a href="recruitRegForm.html"><button id="btn" style="width: 100px; height: 50px;">등록</button></a>
+	</div>
   	
   	
-	
-	
-   
- 
-	
-	  	
-	  
 </body>
 </html>
