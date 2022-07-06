@@ -40,7 +40,7 @@
 	    	font-style: normal;
 		}
 		
-		#btn input {
+		button{
 			font-family: 'OTWelcomeRA';
 			font-size: 20px;
 			color: black;
@@ -160,7 +160,7 @@
 	<table width="100%" height="200px">
 		<tr>
 			<td align="center" style="background-color: skyblue">활동기간</td>
-			<td align="center" style="background-color: skyblue">기&nbsp;&nbsp\관</td>
+			<td align="center" style="background-color: skyblue">기&nbsp;&nbsp;관</td>
 			<td align="center" style="background-color: skyblue">담당업무</td>
 			<td align="center" style="background-color: skyblue">경험 및 습득역량</td>
 		</tr>
@@ -187,7 +187,13 @@
 	<br><br>
 	
 	<div align="center" id="btn">
-		<a href="recruitView.html"><input type="button" id="btn" value="저장하기" onclick="alert('저장 완료')" style="width: 100px; height:50px;"></a>
+		<a href="recruitView.html"><button align="center" style="width: 100px; height: 50px;">저장하기</button></a>
+		<a href="recruitView.html"><button align="center" style="width: 100px; height: 50px;">뒤로가기</button></a>
+	</div>
+	
+	<div align="center">
+		<input id="submitButton" type="submit"  value="검색" onClick="javascript:searchNew();" /></span>
+		<span class="button white" >
 	</div>
 	
 </body>

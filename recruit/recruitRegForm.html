@@ -32,6 +32,20 @@
 			font-size: 40px;
 			color: black;
 		}
+		
+		@font-face {
+	    	font-family: 'OTWelcomeRA';
+	    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+	    	font-weight: normal;
+	    	font-style: normal;
+		}
+		
+		
+		#btn input {
+			font-family: 'OTWelcomeRA';
+			font-size: 20px;
+			color: black;
+		}
 	</style>
 </head>
 
@@ -170,6 +184,12 @@
 			<td align="center"><input type="text" placeholder="" style="width: 300px; height: 30px;"></td>
 		</tr>
 	</table>
+	
+	<br><br>
+	
+	<div align="center" id="btn">
+		<a href="recruitView.html"><input type="button" id="btn" value="저장하기" onclick="alert('저장 완료')" style="width: 100px; height:50px;"></a>
+	</div>
 	
 </body>
 </html>
